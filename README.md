@@ -7,4 +7,4 @@ Multiplataforma
 Turma: 2o. Semestre de 2026
 Portfólio Online
 
-[🔗 Acesse o Portfólio](https://erickrost.github.io/ra2581392523028/)
+[🔗 Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392523028/)
