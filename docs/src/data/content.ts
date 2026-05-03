@@ -80,6 +80,12 @@ const data: SiteData = {
 
   projects: [
     {
+      name: 'Setup Local de LLMs para RAG e Automação',
+      description: `Infraestrutura dockerizada para rodar um ecossistema de IA completamente local, sem dependência de APIs externas. Combina Ollama, Open WebUI e SearXNG para conversas com RAG em tempo real, e Open Interpreter via venv Python para automação de scripts direto no terminal. Desenvolvido e testado em Linux Mint rodando em um Ryzen 7 APU com 24 GB de RAM compartilhada.`,
+      tags: ['Docker', 'Ollama', 'LLM', 'RAG', 'SearXNG', 'Open WebUI', 'Python', 'Linux'],
+      link: { label: 'GitHub', url: 'https://github.com/erickrost/local-llm-workflow' },
+    },
+    {
       name: 'INPE - AgriRS Lab',
       description: `O projeto ABP (Aprendizagem Baseada em Projeto) desenvolvido como atividade do 1° semestre do curso de Desenvolvimento de Software Multiplataforma da Fatec Jacareí, tem como objetivo criar um website para o Laboratório de Sensoriamento Remoto Agrícola do INPE (AgriRS Lab). Contribuindo para manter as atividades e descobertas científicas atualizadas para a comunidade e promove a divulgação do laboratório para interessados em conhecer ou colaborar com o trabalho desenvolvido.`,
       tags: ['JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'Node.js', 'Express', 'REST API'],
