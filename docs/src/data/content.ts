@@ -80,8 +80,14 @@ const data: SiteData = {
 
   projects: [
     {
+      name: 'Chatbot de Autoatendimento para Secretaria Acadêmica',
+      description: `Aplicação web desenvolvida para otimizar o atendimento da Secretaria Acadêmica da Fatec Jacareí por meio de um chatbot conversacional de autoatendimento. O sistema conduz usuários através de fluxos guiados e menus estruturados para responder dúvidas recorrentes sobre calendário acadêmico, horários de aula, estágio supervisionado, aproveitamento de disciplinas, trancamentos e estrutura curricular dos cursos. As respostas são padronizadas e, quando necessário, complementadas com trechos extraídos diretamente de documentos oficiais como o Regulamento Geral das Fatecs, PPCs e Manuais Institucionais, garantindo confiabilidade, rastreabilidade das informações e redução de ambiguidades no atendimento.`,
+      tags: ['React', 'Node.js', 'TypeScript', 'Chatbot', 'UX', 'REST API', 'Scrum', 'Automação de Atendimento'],
+      link: { label: 'Em Desenvolvimento', url: '#' },
+    },
+    {
       name: 'Setup Local de LLMs para RAG e Automação',
-      description: `Infraestrutura dockerizada para rodar um ecossistema de IA completamente local, sem dependência de APIs externas. Combina Ollama, Open WebUI e SearXNG para conversas com RAG em tempo real, e Open Interpreter via venv Python para automação de scripts direto no terminal. Desenvolvido e testado em Linux Mint rodando em um Ryzen 7 APU com 24 GB de RAM compartilhada.`,
+      description: `Infraestrutura dockerizada para rodar um ecossistema de IA completamente local, sem dependência de APIs externas. Combina Ollama, Open WebUI e SearXNG para conversas com RAG em tempo real, e Open Interpreter via venv Python para automação de scripts direto no terminal. Desenvolvido e testado em Linux Mint rodando em um Ryzen 7 APU com 24 GB de RAM compartilhada`,
       tags: ['Docker', 'Ollama', 'LLM', 'RAG', 'SearXNG', 'Open WebUI', 'Python', 'Linux'],
       link: { label: 'GitHub', url: 'https://github.com/erickrost/local-llm-workflow' },
     },
