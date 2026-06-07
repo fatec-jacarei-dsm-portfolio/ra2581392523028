@@ -81,30 +81,50 @@ const data: SiteData = {
   projects: [
     {
       name: 'Chatbot de Autoatendimento para Secretaria Acadêmica',
-      description: `Aplicação web desenvolvida para otimizar o atendimento da Secretaria Acadêmica da Fatec Jacareí por meio de um chatbot conversacional de autoatendimento. O sistema conduz usuários através de fluxos guiados e menus estruturados para responder dúvidas recorrentes sobre calendário acadêmico, horários de aula, estágio supervisionado, aproveitamento de disciplinas, trancamentos e estrutura curricular dos cursos. As respostas são padronizadas e, quando necessário, complementadas com trechos extraídos diretamente de documentos oficiais como o Regulamento Geral das Fatecs, PPCs e Manuais Institucionais, garantindo confiabilidade, rastreabilidade das informações e redução de ambiguidades no atendimento.`,
+      category: 'Acadêmicos',
+      semester: '2DSM – 1º Sem. 2026',
+      description: `Aplicação web desenvolvida como Projeto Integrador para otimizar o atendimento da Secretaria Acadêmica da Fatec Jacareí. O sistema utiliza fluxos guiados e menus estruturados para responder dúvidas recorrentes sobre calendário acadêmico, horários de aula, estágio supervisionado, aproveitamento de disciplinas, trancamentos e estrutura curricular dos cursos.`,
+      contribution: `Atuei na definição e organização dos requisitos do produto, estruturação dos fluxos de atendimento e validação das regras de negócio com foco na clareza das respostas ao usuário. Também contribuí na construção das telas administrativas, na modelagem dos dados relacionados aos fluxos e na integração entre front-end e back-end para manter o conteúdo do chatbot gerenciável pela equipe responsável.`,
       tags: ['React', 'Node.js', 'TypeScript', 'Chatbot', 'UX', 'REST API', 'Scrum', 'Automação de Atendimento'],
       link: { label: 'Em Desenvolvimento', url: '#' },
     },
     {
-      name: 'Setup Local de LLMs para RAG e Automação',
-      description: `Infraestrutura dockerizada para rodar um ecossistema de IA completamente local, sem dependência de APIs externas. Combina Ollama, Open WebUI e SearXNG para conversas com RAG em tempo real, e Open Interpreter via venv Python para automação de scripts direto no terminal. Desenvolvido e testado em Linux Mint rodando em um Ryzen 7 APU com 24 GB de RAM compartilhada`,
-      tags: ['Docker', 'Ollama', 'LLM', 'RAG', 'SearXNG', 'Open WebUI', 'Python', 'Linux'],
-      link: { label: 'GitHub', url: 'https://github.com/erickrost/local-llm-workflow' },
-    },
-    {
       name: 'INPE - AgriRS Lab',
-      description: `O projeto ABP (Aprendizagem Baseada em Projeto) desenvolvido como atividade do 1° semestre do curso de Desenvolvimento de Software Multiplataforma da Fatec Jacareí, tem como objetivo criar um website para o Laboratório de Sensoriamento Remoto Agrícola do INPE (AgriRS Lab). Contribuindo para manter as atividades e descobertas científicas atualizadas para a comunidade e promove a divulgação do laboratório para interessados em conhecer ou colaborar com o trabalho desenvolvido.`,
-      tags: ['JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'Node.js', 'Express', 'REST API'],
+      category: 'Acadêmicos',
+      semester: '1DSM – 2º Sem. 2025',
+      description: `Projeto Integrador desenvolvido para o Laboratório de Sensoriamento Remoto Agrícola do INPE (AgriRS Lab), com o objetivo de criar um website institucional para divulgar pesquisas, publicações, equipe e atividades do laboratório. A solução buscou facilitar o acesso público às informações do laboratório e apoiar a comunicação científica com pesquisadores, estudantes e possíveis parceiros.`,
+      contribution: `Atuei como Product Owner, sendo responsável por organizar requisitos, priorizar entregas, alinhar expectativas com o cliente e apoiar a equipe na transformação das necessidades do laboratório em funcionalidades. Também contribuí na estruturação das páginas, no refinamento das histórias de usuário, na validação das entregas e na apresentação final do projeto ao cliente.`,
+      tags: ['JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'Node.js', 'Express', 'REST API', 'Scrum'],
       link: { label: 'GitHub', url: 'https://github.com/erickrost/AgriRS-Lab/tree/main' },
     },
     {
       name: 'Bancos de Dados em SIG: Análise Crítica de Práticas, Desafios e Potencial de Estudo',
-      description: `Realizei uma revisão bibliográfica sistemática (2018–2024) em bases como IEEE, Scopus e ScienceDirect para analisar a eficácia da integração entre bancos de dados e Sistemas de Informações Geográficas (SIG). O estudo investigou desempenho, desafios técnicos e aplicabilidade em áreas como planejamento urbano, gestão ambiental e logística territorial. Os resultados destacaram a crescente demanda por soluções otimizadas de gerenciamento de dados espaciais e a necessidade de mais pesquisas aplicadas, especialmente no cenário brasileiro.`,
-      tags: ['Pesquisa Acadêmica', 'Bancos de Dados', 'Sistemas de Informações Geográficas', 'Análise de Dados', 'Revisão Bibliográfica'],
+      category: 'Acadêmicos',
+      semester: '1DSM – 2º Sem. 2025',
+      description: `Artigo acadêmico desenvolvido a partir de uma revisão bibliográfica sistemática sobre a integração entre bancos de dados e Sistemas de Informações Geográficas (SIG), considerando estudos publicados entre 2018 e 2024. O trabalho analisou desempenho, desafios técnicos e aplicabilidade em áreas como planejamento urbano, gestão ambiental e logística territorial.`,
+      contribution: `Fui responsável pela pesquisa bibliográfica, seleção e análise das fontes, organização dos principais achados e redação crítica do conteúdo. A contribuição principal foi relacionar bancos de dados, desempenho e uso de dados espaciais, conectando conceitos técnicos a aplicações práticas em SIG.`,
+      tags: ['Pesquisa Acadêmica', 'Bancos de Dados', 'SIG', 'Análise de Dados', 'Revisão Bibliográfica'],
       link: { label: 'Artigo', url: 'https://www.even3.com.br/anais/xviiienfocuninter/1234789-bancos-de-dados-em-sig--analise-critica-de-praticas-desafios-e-potencial-de-estudo/' },
     },
-  ],
- 
+    {
+      name: 'Sustentação e Análise de Incidentes em SAP Business One',
+      category: 'Profissionais',
+      semester: 'Experiência profissional – 1º Sem. 2026',
+      description: `Atuação profissional em sustentação de aplicações ERP com foco em SAP Business One, análise de incidentes em ambiente produtivo, investigação de inconsistências em banco de dados e apoio a integrações entre sistemas.`,
+      contribution: `Minha contribuição envolve análise de causa raiz, construção e validação de consultas SQL em SQL Server e SAP HANA, apoio na correção de dados, leitura de logs, investigação de integrações com JSON e APIs, além da comunicação técnica com usuários e equipe de desenvolvimento para reduzir recorrências e manter a continuidade operacional.`,
+      tags: ['SAP Business One', 'SQL Server', 'SAP HANA', 'SQL', 'JSON', 'APIs', 'Troubleshooting', 'RCA'],
+      repositoryNote: 'Projeto profissional com informações confidenciais; repositório não público.',
+    },
+    {
+      name: 'Setup Local de LLMs para RAG e Automação',
+      category: 'Pessoais',
+      semester: 'Projeto pessoal – 1º Sem. 2026',
+      description: `Infraestrutura dockerizada para rodar um ecossistema de IA local, sem dependência de APIs externas. O projeto combina Ollama, Open WebUI e SearXNG para conversas com RAG em tempo real, além de Open Interpreter em ambiente Python para automação de scripts diretamente pelo terminal.`,
+      contribution: `Fui responsável por configurar o ambiente em Linux, organizar os serviços com Docker, testar a execução local dos modelos, documentar o fluxo de uso e ajustar a solução para funcionar em um notebook com Ryzen 7 APU e 24 GB de RAM compartilhada. O projeto reforçou conhecimentos em containers, automação, IA local e integração entre ferramentas.`,
+      tags: ['Docker', 'Ollama', 'LLM', 'RAG', 'SearXNG', 'Open WebUI', 'Python', 'Linux'],
+      link: { label: 'GitHub', url: 'https://github.com/erickrost/local-llm-workflow' },
+    },
+  ], 
     education: [
     {
       type: 'education' as const,
@@ -134,11 +154,6 @@ const data: SiteData = {
 
   contact: [
     {
-      label: 'Email',
-      value: 'erickrosts@gmail.com',
-      href: 'mailto:erickrosts@gmail.com',
-    },
-    {
       label: 'LinkedIn',
       value: 'linkedin.com/in/erick-rost',
       href: 'https://linkedin.com/in/erick-rost',
@@ -152,7 +167,6 @@ const data: SiteData = {
 
   github: 'https://github.com/erickrost',
   linkedin: 'https://linkedin.com/in/erick-rost',
-  email: 'mailto:erickrosts@gmail.com',
 };
 
 export default data;

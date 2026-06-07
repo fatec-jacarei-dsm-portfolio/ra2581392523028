@@ -6,11 +6,17 @@ export interface Experience {
   tags: string[];
 }
 
+export type ProjectCategory = 'Acadêmicos' | 'Profissionais' | 'Pessoais';
+
 export interface Project {
   name: string;
+  category: ProjectCategory;
+  semester: string;
   description: string;
+  contribution: string;
   tags: string[];
   link?: { label: string; url: string };
+  repositoryNote?: string;
 }
 
 export interface Education {
@@ -39,5 +45,4 @@ export interface SiteData {
   contact: ContactInfo[];
   github: string;
   linkedin: string;
-  email: string;
 }

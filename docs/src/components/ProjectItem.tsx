@@ -5,11 +5,16 @@ interface Props {
 }
 
 export default function ProjectItem({ project }: Props) {
+  const showLink = project.link && project.link.url !== '#';
+
   return (
     <div className="project-item">
       <div className="project-header">
-        <span className="project-name">{project.name}</span>
-        {project.link && (
+        <div>
+          <span className="project-name">{project.name}</span>
+          <p className="project-semester">{project.semester}</p>
+        </div>
+        {showLink && (
           <a
             href={project.link.url}
             target="_blank"
@@ -21,10 +26,23 @@ export default function ProjectItem({ project }: Props) {
           </a>
         )}
       </div>
+
+      <p className="project-label">Descrição</p>
       <p
         className="project-description"
         dangerouslySetInnerHTML={{ __html: project.description }}
       />
+
+      <p className="project-label">Contribuição pessoal</p>
+      <p
+        className="project-description"
+        dangerouslySetInnerHTML={{ __html: project.contribution }}
+      />
+
+      {project.repositoryNote && (
+        <p className="project-repository-note">{project.repositoryNote}</p>
+      )}
+
       <div className="tech-tags">
         {project.tags.map((tag) => (
           <span key={tag} className="tech-tag">{tag}</span>

@@ -45,7 +45,6 @@ export default function App() {
         shortDesc={data.shortDesc}
         github={data.github}
         linkedin={data.linkedin}
-        email={data.email}
         activeSection={activeSection}
         onNav={scrollTo}
       />
@@ -100,11 +99,21 @@ export default function App() {
           </Section>
 
           <Section id="projects" label="Projetos">
-            <div className="projects-grid">
-              {data.projects.map((project, i) => (
-                <ProjectItem key={i} project={project} />
-              ))}
-            </div>
+            {(['Acadêmicos', 'Profissionais', 'Pessoais'] as const).map((category) => {
+              const projects = data.projects.filter((project) => project.category === category);
+              if (projects.length === 0) return null;
+
+              return (
+                <div key={category} className="project-category">
+                  <h3 className="project-category-title">{category}</h3>
+                  <div className="projects-grid">
+                    {projects.map((project, i) => (
+                      <ProjectItem key={i} project={project} />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </Section>
 
           <Section id="education" label="Educação & Certificações">
