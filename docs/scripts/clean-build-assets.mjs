@@ -1,4 +1,4 @@
-import { copyFileSync } from 'node:fs';
+import { rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
@@ -6,4 +6,4 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const root = resolve(__dirname, '..');
 
-copyFileSync(resolve(root, 'index.dev.html'), resolve(root, 'index.html'));
+rmSync(resolve(root, 'assets'), { recursive: true, force: true });

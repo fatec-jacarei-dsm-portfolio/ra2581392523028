@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/use-dev-index.mjs && vite",
-    "build": "node scripts/use-dev-index.mjs && tsc -b && vite build && node scripts/copy-public.mjs",
+    "dev": "vite",
+    "build": "node scripts/use-dev-index.mjs && node scripts/clean-build-assets.mjs && tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
